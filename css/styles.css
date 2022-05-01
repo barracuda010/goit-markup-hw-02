@@ -1,0 +1,169 @@
+:root {
+  --bg-color: #ffff;
+  --secondary-bg-color: #2F303A;
+  --third-bg-color: #F5F4FA;
+  --main-text-color: #212121;
+  --secondary-text-color: #2196F3;
+  --third-text-color: #757575;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: var(--bg-color);
+}
+
+/* Навигация */
+.nav-header {
+  font-weight: 500;
+}
+
+.nav-header a {
+  text-decoration: none;
+}
+
+.nav-web {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--secondary-text-color);
+
+}
+
+.nav-studio {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.list-href {
+  color: var(--main-text-color);
+}
+
+.list-href:hover,
+.list-href:focus {
+  color: var(--secondary-text-color);
+}
+
+.nav-menu {
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-contacts {
+  color: var(--third-text-color);
+}
+
+.menu-contacts:hover,
+.menu-contacts:focus {
+  color: var(--secondary-text-color);
+}
+
+/* Главное наполнение */
+
+.main-content {
+  background-color: var(--secondary-bg-color);
+}
+
+.main-text {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--bg-color);
+  text-transform: uppercase;
+}
+
+.main-btn {
+  background-color: var(--secondary-text-color);
+  color: var(--bg-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.qual-list {
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.qual-text {
+  color: var(--third-text-color);
+  line-height: 1.7;
+}
+
+/* Чем занимаемся */
+.what-wedoo {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--third-bg-color);
+}
+
+.member-team {
+  font-size: 16px;
+}
+
+.member-position {
+  font-size: 16px;
+  color: var(--third-text-color);
+}
+
+.foot-bg {
+  background-color: var(--secondary-bg-color);
+}
+
+.menu-contacts-list {
+  color: rgba(255, 255, 255, 0.6);
+  ;
+}
+
+.ftr-nav-studio {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--bg-color);
+}
+
+.adress {
+  font-style: normal;
+  color: var(--bg-color);
+}
+
+/* Портфолио */
+
+.menu-portfolio {
+  list-style: none;
+}
+
+.portf-btn {
+  background-color: var(--third-bg-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.portf-btn:hover,
+.portf-btn:focus {
+  background-color: var(--secondary-text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.projects-menu {
+  list-style: none;
+}
+
+.projects-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.projects-type {
+  font-size: 16px;
+  font-weight: 1.9;
+  color: var(--third-text-color);
+}
