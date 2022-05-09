@@ -9,94 +9,102 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <title>HW1</title>
 </head>
 
 <body>
   <header>
-    <nav class="nav-header">
-      <a href="/"><span class="nav-web">Web</span><span class="nav-studio">Studio</span></a>
+    <nav class="nav-header container">
+      <a class="nav-logo" href="/"><span class="nav-web">Web</span><span class="nav-studio">Studio</span></a>
       <ul class="nav-menu">
-        <li class="nav-list"><a class="list-href" href="">Студия</a></li>
-        <li class="nav-list"><a class="list-href" href="/portfolio.html">Портфолио</a></li>
-        <li class="nav-list"><a class="list-href" href="">Контакты</a></li>
+        <li class="nav-list"><a class="link" href="">Студия</a></li>
+        <li class="nav-list"><a class="link" href="/portfolio.html">Портфолио</a></li>
+        <li class="nav-list"><a class="link" href="">Контакты</a></li>
       </ul>
-      <ul class="nav-menu">
-        <li><a class="menu-contacts" href="info@devstudio.com">info@devstudio.com</a> </li>
-        <li><a class="menu-contacts" href="">+38 096 111 11 11</a></li>
+      <ul class="nav-menu info">
+        <li class="nav-list"><a class="menu-contacts" href="info@devstudio.com">info@devstudio.com</a> </li>
+        <li class="nav-list"><a class="menu-contacts" href="">+38 096 111 11 11</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="main-content">
-      <h1 class="main-text">Эффективные решения для вашего бизнеса</h1>
+      <h1 class="main-text">Эффективные решения<br> для вашего бизнеса</h1>
       <button type="button" class="main-btn">Заказать услугу</button>
     </section>
-    <section class="our-qualities">
-      <h3>Наши качества</h3>
-      <ul class="nav-menu">
-        <li>
+    <section class="our-qualities container ">
+      <!-- <h3>Наши качества</h3> -->
+      <ul class="nav-menu set-qual">
+        <li class="menu-lists section">
           <h2 class="qual-list">Внимание к деталям</h2>
           <p class="qual-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
+        <li class="menu-lists section">
           <h2 class="qual-list">Пунктуальность</h2>
           <p class="qual-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
-        <li>
+        <li class="menu-lists section">
           <h2 class="qual-list">Планирование</h2>
           <p class="qual-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
-        <li>
+        <li class="menu-lists section">
           <h2 class="qual-list">Современные технологии</h2>
           <p class="qual-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
+
       </ul>
     </section>
-    <section>
+    <section class="wrapper wedoo-list">
       <h3 class="what-wedoo">Чем мы занимаемся</h3>
-      <img src="./images/work.jpg" alt="Печать на клавиатуре" width="370" height="294">
-      <img src="./images/work2.jpg" alt="Смартфон в руках" width="370" height="294">
-      <img src="./images/work3.jpg" alt="Плаешет в руках" width="370" height="294">
+      <div class="wedoo-item">
+        <img class="wedoo-img" src="./images/work.jpg" alt="Печать на клавиатуре" width="370">
+        <img class="wedoo-img" src="./images/work2.jpg" alt="Смартфон в руках" width="370">
+        <img class="wedoo-img" src="./images/work3.jpg" alt="Плаешет в руках" width="370">
+      </div>
     </section>
-    <section class="team">
-      <h3 class="what-wedoo" >Наша команда</h3>
-      <ul class="nav-menu">
-        <li>
-          <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
-          <h2 class="member-team">Игорь Демьяненко</h2>
-          <p class="member-position">Product Designer</p>
-        </li>
-        <li>
-          <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
-          <h2 class="member-team">Ольга Репина</h2>
-          <p class="member-position">Frontend Developer</p>
-        </li>
-        <li>
-          <img src="./images/nik.jpg" alt="Николай Тарасов" width="270" height="260">
-          <h2 class="member-team">Николай Тарасов</h2>
-          <p class="member-position">Marketing</p>
-        </li>
-        <li>
-          <img src="./images/mich.jpg" alt="Михаил Ермаков" width="270" height="260">
-          <h2 class="member-team">Михаил Ермаков</h2>
-          <p class="member-position">UI Designer</p>
-        </li>
-      </ul>
+    <section class="team section">
+      <div class="wrapper">
+        <h3 class="what-wedoo">Наша команда</h3>
+        <ul class="nav-menu">
+          <li class="member-list">
+            <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
+            <h2 class="member-team">Игорь Демьяненко</h2>
+            <p class="member-position">Product Designer</p>
+          </li>
+          <li class="member-list">
+            <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260">
+            <h2 class="member-team">Ольга Репина</h2>
+            <p class="member-position">Frontend Developer</p>
+          </li>
+          <li class="member-list">
+            <img src="./images/nik.jpg" alt="Николай Тарасов" width="270" height="260">
+            <h2 class="member-team">Николай Тарасов</h2>
+            <p class="member-position">Marketing</p>
+          </li>
+          <li class="member-list">
+            <img src="./images/mich.jpg" alt="Михаил Ермаков" width="270" height="260">
+            <h2 class="member-team">Михаил Ермаков</h2>
+            <p class="member-position">UI Designer</p>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
-  <footer class="foot-bg" >
-    <div class="nav-header">
-    <a href="/"><span class="nav-web">Web</span><span class="ftr-nav-studio">Studio</span></a>
-    <ul class="nav-menu">
-      <li>
-        <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-      </li>
-      <li><a class="menu-contacts-list" href="/">info@devstudio.com</a> </li>
-      <li><a class="menu-contacts-list" href="">+38 096 111 11 11</a></li>
-    </ul>
-  </div>
+  <footer class="foot-bg ">
+    <div class="nav-header container">
+      <div class="footer-menu">
+        <a href="/"><span class="nav-web">Web</span><span class="ftr-nav-studio">Studio</span></a>
+        <ul class="nav-menu footer-menu">
+          <li>
+            <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
+          </li>
+          <li class="mail"><a class="menu-contacts-list " href="/">info@devstudio.com</a> </li>
+          <li class="number"><a class="menu-contacts-list " href="">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
 </body>
