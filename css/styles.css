@@ -5,6 +5,8 @@
   --main-text-color: #212121;
   --secondary-text-color: #2196F3;
   --third-text-color: #757575;
+  --icon-color: #AFB1B8;
+  --gradient: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -23,10 +25,12 @@ h6,
 p {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 /* Навигация */
 header {
   border-bottom: 1px solid var(--third-bg-color);
@@ -106,8 +110,17 @@ header {
   margin-left: 50px;
 }
 
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon:hover {
+  color: var(--secondary-text-color);
+}
+
 .menu-contacts {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--third-text-color);
@@ -121,9 +134,13 @@ header {
 /* Главное наполнение */
 
 .main-content {
+  background-image: linear-gradient(to right, var(--gradient), var(--gradient)),
+    url(/images/Img.jpg);
   text-align: center;
-  background-color: var(--secondary-bg-color);
-  /* padding-top: 200px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-text {
@@ -153,6 +170,19 @@ header {
   margin-right: 30px;
 }
 
+.menu-icons {
+  width: 270px;
+  height: 120px;
+  background-color: var(--third-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 .qual-list {
   font-size: inherit;
   font-weight: 700;
@@ -178,6 +208,7 @@ header {
   display: flex;
   padding-bottom: 94px;
 }
+
 .wedoo-img:not(:last-child) {
   margin-right: 30px;
 }
@@ -186,8 +217,10 @@ header {
   background-color: var(--third-bg-color);
 }
 
+/* Наша команда */
 .member-list {
   background-color: var(--bg-color);
+  width: 270px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -210,14 +243,85 @@ header {
   color: var(--third-text-color);
 }
 
+.social-media {
+  display: flex;
+  list-style: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon+.social-icon {
+  margin-left: 10px;
+}
+
+.icon-list {
+  fill: var(--third-text-color);
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-text-color);
+  border-radius: 50%;
+}
+
+.icon-list:hover {
+  fill: var(--third-bg-color);
+}
+
+/* Наши партнёры */
+.partners {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.partner-list+.partner-list {
+  margin-left: 30px;
+}
+
+.partner-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.partner-icon {
+  fill: var(--icon-color);
+}
+
+.partner-icon:hover {
+  fill: #2196F3;
+}
+
+.partner-list:hover {
+  border: 1px solid #2196F3;
+}
+
 /* Footer */
 .foot-bg {
   background-color: var(--secondary-bg-color);
 }
-
+.footer-descr{
+  display: flex;
+}
 .footer-menu {
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
 }
 
 .footer-menu a {
@@ -248,20 +352,62 @@ header {
   font-style: normal;
   color: var(--bg-color);
 }
+.join{
+  padding-top: 72px;
+}
+.footer-info {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--third-bg-color);
+}
+
+.footer-social {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-icons {
+  fill: var(--third-bg-color);
+}
+
+.footer_social-list+.footer_social-list {
+  margin-left: 10px;
+}
+
+.footer_social-list {
+  list-style: none;
+}
+
+.footer_social-list a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_social-list a:hover{
+  background-color: var(--secondary-text-color);
+}
 
 /* Портфолио */
-.portfolio{
+.portfolio {
   margin-bottom: 31px;
 }
+
 .menu-portfolio {
   list-style: none;
   display: flex;
   justify-content: center;
   margin: 0;
 }
-.menu-portfolio > li+li{
+
+.menu-portfolio>li+li {
   margin-left: 8px;
 }
+
 .portf-btn {
   width: 128px;
   height: 38px;
@@ -279,7 +425,7 @@ header {
   color: var(--bg-color);
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .projects-menu {
@@ -288,20 +434,28 @@ border-radius: 4px;
   list-style: none;
   margin: 0;
   padding: 0;
-    margin-left: -30px;
+  margin-left: -30px;
   margin-top: -30px;
 }
-.projects-info{
+
+.projects-info {
   flex-basis: calc(100% /3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  border: 1px solid #EEEEEE;
 }
-.proj-content{
-  padding-top:20px;
+.projects-info:hover{
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.proj-content {
+  padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .projects-list {
   font-weight: 700;
   font-size: 18px;
