@@ -19,7 +19,7 @@
     <nav class="nav-header container">
       <a class="nav-logo" href="/"><span class="nav-web">Web</span><span class="nav-studio">Studio</span></a>
       <ul class="nav-menu">
-        <li class="nav-list"><a class="link" href="">Студия</a></li>
+        <li class="nav-list active"><a class="link" href="">Студия</a></li>
         <li class="nav-list"><a class="link" href="/portfolio.html">Портфолио</a></li>
         <li class="nav-list"><a class="link" href="">Контакты</a></li>
       </ul>
@@ -43,7 +43,12 @@
   <main>
     <section class="main-content">
       <h1 class="main-text">Эффективные решения<br> для вашего бизнеса</h1>
-      <button type="button" class="main-btn">Заказать услугу</button>
+      <button data-modal-open type="button" class="main-btn">Заказать услугу</button>
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal ">
+          <button data-modal-close class="modal-btn">&#9747;</button>
+        </div>
+      </div>
     </section>
     <section class="our-qualities container ">
       <!-- <h3>Наши качества</h3> -->
@@ -89,11 +94,19 @@
     </section>
     <section class="wrapper wedoo-list">
       <h3 class="what-wedoo">Чем мы занимаемся</h3>
-
       <div class="wedoo-item">
-        <img class="wedoo-img" src="./images/work.jpg" alt="Печать на клавиатуре" width="370">
-        <img class="wedoo-img" src="./images/work2.jpg" alt="Смартфон в руках" width="370">
-        <img class="wedoo-img" src="./images/work3.jpg" alt="Плаешет в руках" width="370">
+        <div class="wedoo-info">
+          <img src="./images/work2.jpg" alt="Смартфон в руках" width="370">
+          <p class="wedoo-text1">Десктопные приложения</p>
+        </div>
+        <div class="wedoo-info">
+          <img src="./images/work.jpg" alt="Печать на клавиатуре" width="370">
+          <p class="wedoo-text1">Мобильные приложения</p>
+        </div>
+        <div class="wedoo-info">
+          <img src="./images/work3.jpg" alt="Плаешет в руках" width="370">
+          <p class="wedoo-text1">Дизайнерские решения</p>
+        </div>
       </div>
     </section>
     <section class="team section">
@@ -292,6 +305,7 @@
     </div>
   </footer>
 
+  <script src="/js/modal.js"></script>
 </body>
 
 </html>
